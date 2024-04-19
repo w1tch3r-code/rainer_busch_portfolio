@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* ========================================================== 
+							Fonts
+========================================================== */
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Poppins-Bd';
+	src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+/* ========================================================== 
+											Color Variables
+========================================================== */
+
+:root {
+	--darkerBlue: #23283e;
+	--darkerBlue95: #23283ef2;
+	--darkBlue: #2a2f4c;
+	--beigeYellow: #c2b282;
+	--salmon: #bd958a;
+	--lightTurquoise: #99ced3;
+	--lightBlueGrey: #bdbddd;
+	--lightBlueGrey60: #bdbddd60;
+	--lighterBlueGrey: #cdcdff;
+	--lighterBlueGrey50: #cdcdff80;
+	--lighterBlueGrey20: #ccccff33;
+	--mediumBlueGrey: #90a0d9;
+	--cyan: #2978b5;
+	--cyan50: #2978b580;
+	--white: #fff;
+	--white95: #fffffff2;
+	--darkwhite: #f2f2f2;
+	--grey: #444;
+	--black10: #0000001a;
+	--black20: #00000033;
+	--black50: #00000080;
+	--black80: #000000cc;
+}
+
+/* ========================================================== 
+                    HTML - Body - Wrapper
+========================================================== */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins';
+	background: url('./assets/images/background.jpg') (center / cover) fixed
+		no-repeat;
+	text-align: center;
+	color: var(--lighterBlueGrey);
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding-block: 0 4vh;
+	background: var(--darkerBlue95);
+}
+
+/* ========================================================== 
+                        Global - Content
+========================================================== */
+
+h1 {
+	line-height: 120%;
+}
+
+h2 {
+	font-family: 'Poppins-Bd';
+	font-size: 1.4rem;
+	padding-block: 20px;
+	color: var(--beigeYellow);
+
+	&::before {
+		content: '\002F\002F';
+		margin-right: 5px;
+	}
+
+	&:not(:first-child)::before {
+		content: '';
+	}
+}
+
+h3 {
+	font-family: 'Poppins-Bd';
+	font-size: 1.2rem;
+	padding-block: 10px;
+}
+
+p {
+	font-size: 0.8rem;
+	padding-block-end: 20px;
+}
+
+a {
+	font-size: 0.9rem;
+	display: inline-block;
+}
+
+.address {
+	margin: 0 auto;
+	font-style: normal;
+	font-size: 0.8rem;
+	margin-top: 10vh;
+	cursor: pointer;
+	width: max-content;
+	font-weight: 600;
+
+	&:after {
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		background: var(--lightBlueGrey);
+		transition: width 0.3s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+}
+
+svg {
+	width: 1.5em;
+	height: auto;
+	fill: var(--lightBlueGrey);
+	margin-top: 5px;
+
+	&:hover {
+		fill: var(--lightBlueGrey60);
+		cursor: pointer;
+	}
+}
+
+/* ========================================================== 
+                            Lightmodus
+========================================================== */
+
+.light {
+	background-color: var(--white95);
+	color: var(--grey);
+
+	h2 {
+		color: var(--cyan);
+	}
+
+	.logo,
+	.hamburger-menu .mobile-logo {
+		color: var(--grey);
+	}
+
+	.logo:hover {
+		color: var(--cyan);
+	}
+
+	.hamburger-menu {
+		.mobile-logo:hover {
+			color: var(--cyan);
+		}
+
+		background: var(--white);
+		-webkit-tap-highlight-color: var(--cyan);
+	}
+
+	.bar {
+		background: var(--grey);
+
+		&.animate {
+			background: var(--white);
+		}
+
+		&:before,
+		&:after {
+			background: var(--grey);
+		}
+	}
+
+	.navbar__wrapper {
+		background: linear-gradient(
+			90deg,
+			transparent 0%,
+			var(--white) 5%,
+			var(--white) 50%,
+			var(--white) 95%,
+			transparent 100%
+		);
+	}
+
+	.navbar {
+		li a {
+			color: var(--grey);
+		}
+
+		.main-nav a:after {
+			background: var(--cyan);
+		}
+	}
+
+	.section__hero h1 span {
+		color: var(--cyan);
+	}
+
+	.button {
+		border-color: var(--cyan);
+		color: var(--cyan);
+
+		&:before {
+			background-color: var(--cyan);
+		}
+
+		&:hover {
+			color: var(--white);
+		}
+	}
+
+	.div__skill {
+		background-color: transparent;
+	}
+
+	.react-multiple-carousel__arrow {
+		background: var(--black80);
+
+		&:hover {
+			background: var(--black50);
+		}
+	}
+
+	svg {
+		fill: var(--grey);
+
+		&:hover {
+			fill: var(--cyan);
+		}
+	}
+
+	address:after {
+		background: var(--cyan);
+	}
+
+	/* ========================================================== 
+                        Resume - Lightmodus
+========================================================== */
+
+	.resume__navbar {
+		background: linear-gradient(
+			90deg,
+			transparent 0%,
+			var(--white) 5%,
+			var(--white) 50%,
+			var(--white) 95%,
+			transparent 100%
+		);
+	}
+
+	.section__resume {
+		p {
+			color: var(--grey);
+		}
+
+		h1,
+		h2 {
+			color: var(--cyan);
+		}
+
+		h3,
+		h4 {
+			color: var(--grey);
+		}
+	}
+
+	.article__experience {
+		background-color: var(--white);
+	}
+
+	.article__contact {
+		background-color: var(--darkwhite);
+
+		div {
+			border-bottom: 1px solid var(--grey);
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		picture img {
+			margin: 0 auto;
+			filter: grayscale(1) drop-shadow(0 0 5px var(--black50));
+		}
+
+		.vite-logo {
+			filter: invert(0);
+		}
+	}
+}
+
+/* ========================================================== 
+                    Media Queries - Light Modus
+========================================================== */
+
+@media screen and (max-width: 576px) {
+	.light .navbar {
+		background: var(--darkwhite);
+
+		li:hover {
+			background: var(--white);
+		}
+	}
+
+	.light .hamburger-menu {
+		.bar {
+			background: var(--grey);
+
+			&:before {
+				background: var(--grey);
+			}
+
+			&:after {
+				background: var(--grey);
+			}
+		}
+	}
+}

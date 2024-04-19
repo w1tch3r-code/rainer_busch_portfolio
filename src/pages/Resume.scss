@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.header__resume {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.main__resume {
+	padding-inline: 3%;
+
+	.section__resume {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		box-shadow: 0 0 20px 2px var(--black20);
+		max-width: 1024px;
+		margin: 8vh auto;
+
+		h1 {
+			font-family: 'Poppins-Bd';
+			font-size: 2.2rem;
+			color: var(--darkwhite);
+		}
+
+		h2 {
+			padding-block: 10px 5px;
+			color: var(--beigeYellow);
+		}
+
+		h3 {
+			font-family: 'Poppins';
+			letter-spacing: 1px;
+			padding-block: 0;
+			color: var(--beigeYellow);
+		}
+
+		h4 {
+			font-size: 1rem;
+			letter-spacing: 1px;
+			padding-block: 0;
+			color: var(--darkwhite);
+		}
+
+		h5 {
+			font-size: 0.8rem;
+			letter-spacing: 1px;
+			padding-block: 0;
+			color: var(--salmon);
+		}
+
+		p {
+			letter-spacing: 1px;
+			padding-block: 10px 0;
+			color: var(--lightTurquoise);
+		}
+
+		h3::before,
+		h4::before {
+			content: '\003C';
+		}
+
+		h3::after,
+		h4::after {
+			content: '\003E';
+		}
+	}
+
+	.article__experience {
+		padding-inline: 40px;
+		text-align: left;
+		background-color: var(--black20);
+		flex: 1 1 60%;
+		padding-block-start: 20px;
+
+		div {
+			padding-block-end: 20px;
+		}
+	}
+
+	.article__contact {
+		padding-inline: 40px;
+		text-align: left;
+		flex: 2 40%;
+		padding-block-start: 20px;
+
+		div {
+			padding-block: 20px;
+			border-bottom: 1px solid var(--white);
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		h5 {
+			padding-block-end: 10px;
+		}
+
+		picture {
+			padding-block-end: 20px;
+			display: block;
+			max-width: 75%;
+			margin: 0 auto;
+
+			img {
+				margin: 0 auto;
+				filter: sepia(1) drop-shadow(0 0 5px var(--black50));
+			}
+		}
+
+		.contact address {
+			font-style: normal;
+
+			p {
+				text-transform: unset;
+				margin-left: -3px;
+			}
+
+			a {
+				font-size: 0.8rem;
+			}
+		}
+
+		p {
+			color: var(--white);
+			padding-block: 1px;
+			text-transform: uppercase;
+
+			&.gt__lt::before {
+				content: '\003C\003E';
+				margin-right: 5px;
+			}
+		}
+
+		.skills p {
+			font-size: 1rem;
+			margin-left: -5px;
+		}
+
+		.courses div:first-of-type {
+			padding-block-start: 0;
+		}
+
+		.vite-logo {
+			display: inline;
+			width: 16px;
+			filter: invert(1);
+			margin-inline: 4px;
+			vertical-align: middle;
+		}
+	}
+}
+
+/* ========================================================== 
+                        Media Queries
+========================================================== */
+
+@media screen and (max-width: 576px) {
+	.section__resume {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.main__resume {
+		.article__contact picture {
+			padding-block-end: 20px;
+			display: block;
+			max-width: 25%;
+			margin: 0 auto;
+			position: fixed;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 10px);
+			z-index: 999;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.section__skills {
+	max-width: 560px;
+	margin: 4vh auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	h2 {
+		width: 100%;
+	}
+	.div__skill {
+		font-size: 0.9rem;
+		padding: 10px 22px;
+		box-shadow: 0 0 10px 2px var(--black10);
+		background-color: var(--darkBlue);
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			margin: -5px 0 5px;
+			cursor: pointer;
+		}
+	}
+}

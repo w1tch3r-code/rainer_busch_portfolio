@@ -1,0 +1,51 @@
+.resume__navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 2vh;
+	max-width: 940px;
+	margin: 0 auto;
+	padding-inline: 3%;
+
+	.logo {
+		color: var(--lightBlueGrey);
+		font-size: 1.2rem;
+
+		&:hover {
+			color: var(--lightBlueGrey60);
+		}
+	}
+
+	div {
+		font-family: "Poppins-Bd";
+	}
+
+	.main-nav {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+		list-style: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+/* ========================================================== 
+													Media Queries
+========================================================== */
+
+@media screen and (max-width: 576px) {
+	.resume__navbar {
+		.logo {
+			display: block;
+			font-size: 1.6rem;
+			font-family: "Poppins-Bd";
+		}
+
+		svg {
+			display: block;
+			width: 2.5em;
+			margin-top: -5px;
+		}
+	}
+}

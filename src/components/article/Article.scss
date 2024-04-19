@@ -1,0 +1,76 @@
+.section__projects {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 870px;
+
+	h2 {
+		padding-block: 20px 0;
+	}
+
+	&:hover .react-multiple-carousel__arrow {
+		opacity: 1;
+	}
+
+	article {
+		display: flex;
+		height: 100%;
+		padding-block: 10px 30px;
+		padding-inline: 20px;
+		margin-inline: 40px 0;
+		box-shadow: 0 0 20px 2px var(--black20);
+		transition: all 0.5s ease-in-out;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&:hover {
+			margin-block: -10px;
+			cursor: pointer;
+		}
+
+		.skills {
+			p {
+				font-weight: 600;
+				color: var(--salmon);
+			}
+		}
+		.project__links__wrapper {
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+			column-gap: 15px;
+
+			a {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+/* ========================================================== 
+                  react multi carousel styles
+========================================================== */
+
+.react-multi-carousel-list {
+	padding: 30px 0;
+
+	.react-multi-carousel-track {
+		margin: 0 -20px;
+	}
+
+	.react-multiple-carousel__arrow {
+		background: var(--lighterBlueGrey20);
+		opacity: 0;
+
+		&:hover {
+			background: var(--lighterBlueGrey50);
+		}
+	}
+
+	.react-multiple-carousel__arrow--right {
+		right: calc(0% + 1px);
+	}
+
+	.react-multiple-carousel__arrow--left {
+		left: calc(0% + 1px);
+	}
+}
