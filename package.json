@@ -1,6 +1,6 @@
 {
-  "name": "reactjs_simplefolio_lp_use_context",
-  "private": true,
+  "name": "rainer_busch_portfolio",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
