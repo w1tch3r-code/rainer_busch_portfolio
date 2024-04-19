@@ -176,10 +176,10 @@ const Resume = () => {
 					<article className="article__contact">
 						<picture>
 							<source
-								srcSet="../src/assets/images/rainer_mobile.png"
+								srcSet="/rainer_mobile.png"
 								media="(max-width: 790px)"
 							/>
-							<img src="../src/assets/images/rainer.png" alt="Rainer Busch" />
+							<img src="/rainer.png" alt="Rainer Busch" />
 						</picture>
 						<div className="contact">
 							<h2>Contact</h2>
