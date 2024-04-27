@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faEnvelope,
 	faPhone,
 	faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import {
 	faHtml5,
 	faCss3,
@@ -15,19 +15,18 @@ import {
 	faGit,
 	faFigma,
 	faWordpress,
-} from "@fortawesome/free-brands-svg-icons";
-import { useContext } from "react";
-import DarkModeContext from "../components/DarkModeContext";
-import NavResume from "../components/navResume/NavResume";
-import EmailItem from "../components/email/EmailItem";
-import "./Resume.scss";
+} from '@fortawesome/free-brands-svg-icons';
+import { useContext } from 'react';
+import DarkModeContext from '../components/DarkModeContext';
+import NavResume from '../components/navResume/NavResume';
+import EmailItem from '../components/email/EmailItem';
+import './Resume.scss';
 
 const Resume = () => {
-
 	const [darkMode] = useContext(DarkModeContext);
-	
+
 	return (
-		<div className={`wrapper ${darkMode ? "light" : ""}`}>
+		<div className={`wrapper ${darkMode ? 'light' : ''}`}>
 			<header className="header__resume">
 				<NavResume />
 			</header>
@@ -79,7 +78,7 @@ const Resume = () => {
 							</p>
 						</div>
 						<div className="experience">
-							<h2>Experience</h2>
+							<h2>Work experience</h2>
 							<div>
 								<h4>Web-Mediengestalter</h4>
 								<h5>
@@ -120,16 +119,13 @@ const Resume = () => {
 									Mediendesign Busch / Hochneukirch / Dezember 2006 bis Mai 2009
 								</h5>
 								<p>
-									Als selbstständiger Mediengestalter habe ich umfassende
-									Erfahrung in der Gestaltung von Printmedien gesammelt,
-									darunter Logos, Visitenkarten, Briefbögen, Flyer und Plakate.
-									Zusätzlich zur Printgestaltung war ich auch für die Gestaltung
-									und Umsetzung von kleineren statischen Webseiten mittels HTML
-									und CSS verantwortlich. Ein zentraler Bestandteil meiner
-									Tätigkeit war der direkte Kundenkontakt, bei dem ich Angebote
-									erstellte und eng mit den Kunden zusammenarbeitete, um deren
-									Anforderungen zu erfüllen und maßgeschneiderte Lösungen
-									anzubieten.
+									Als selbstständiger Mediengestalter habe ich Erfahrung in der
+									Gestaltung von Printmedien gesammelt, darunter Logos,
+									Visitenkarten, Briefbögen, Flyer und Plakate. Ein zentraler
+									Bestandteil meiner Tätigkeit war der direkte Kundenkontakt,
+									bei dem ich Angebote erstellte und eng mit den Kunden
+									zusammenarbeitete, um deren Anforderungen zu erfüllen und
+									maßgeschneiderte Lösungen anzubieten.
 								</p>
 							</div>
 							<div>
@@ -175,10 +171,7 @@ const Resume = () => {
 					</article>
 					<article className="article__contact">
 						<picture>
-							<source
-								srcSet="/rainer_mobile.png"
-								media="(max-width: 790px)"
-							/>
+							<source srcSet="/rainer_mobile.png" media="(max-width: 790px)" />
 							<img src="/rainer.png" alt="Rainer Busch" />
 						</picture>
 						<div className="contact">
@@ -189,7 +182,7 @@ const Resume = () => {
 									&nbsp;
 									<EmailItem
 										href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#114;&#097;&#105;&#110;&#101;&#114;&#046;&#098;&#117;&#115;&#099;&#104;&#051;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
-										title={"E-Mail senden"}
+										title={'E-Mail senden'}
 									/>
 								</p>
 								<p>
@@ -198,7 +191,7 @@ const Resume = () => {
 									<a href="tel:+4917628449855">+49 176 28449855</a>
 								</p>
 								<p>
-									<FontAwesomeIcon icon={faGlobe} />{" "}
+									<FontAwesomeIcon icon={faGlobe} />{' '}
 									<a href="https://rainer-busch.netlify.app/">
 										https://rainer-busch.netlify.app/
 									</a>
@@ -227,7 +220,7 @@ const Resume = () => {
 									src="../vite_black.svg"
 									alt="vite-logo"
 									className="vite-logo"
-								/>{" "}
+								/>{' '}
 								VITE
 							</p>
 							<p>
@@ -247,7 +240,7 @@ const Resume = () => {
 							</p>
 						</div>
 						<div className="courses">
-							<h2>Courses</h2>
+							<h2>Further education</h2>
 							<div>
 								<h4>Bootcamp</h4>
 								<h4>Front-End Web-Entwicklung</h4>
@@ -281,6 +274,20 @@ const Resume = () => {
 								<p className="gt__lt">jQuery</p>
 								<p className="gt__lt">PHP</p>
 							</div>
+						</div>
+						<div className="languages">
+							<h2>Languages</h2>
+							<p className="gt__lt">Deutsch</p>
+							<p className="gt__lt">Englisch &#040;B2&#041;</p>
+							<p className="gt__lt">Französisch &#040;A2&#041;</p>
+						</div>
+						<div className="hobbies">
+							<h2>Hobbies</h2>
+							<p className="gt__lt">coding</p>
+							<p className="gt__lt">learning</p>
+							<p className="gt__lt">gaming</p>
+							<p className="gt__lt">eating</p>
+							<p className="gt__lt">sleeping</p>
 						</div>
 					</article>
 				</section>

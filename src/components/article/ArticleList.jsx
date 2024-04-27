@@ -81,7 +81,7 @@ const ArticleList = () => {
 					liveUrl={"https://w1tch3r-code.github.io/js_multiple_calculator/"}
 				/>
 				<ArticleItem
-					title={"Project Movie DB"}
+					title={"Project Movie DB I"}
 					description={
 						"Bei diesem JavaScript-Projekt handelt es sich um eine Movie-Datenbank, bei der die Filme aus einem Array beim Laden der Seite angezeigt werden. Die Suche nach Filmen und Filtermöglichkeiten wurden programmiert."
 					}
@@ -99,7 +99,7 @@ const ArticleList = () => {
 					liveUrl={"https://reactjs-beer-api-rainer-busch.netlify.app"}
 				/>
 				<ArticleItem
-					title={"Project Movie DB"}
+					title={"Project Movie DB II"}
 					description={
 						"Bei diesem Projekt handelt es sich um die gleiche Movie-Datenbank wie zuvor, nur dieses Mal mit React umgesetzt. Die Filme werden jetzt aus einer JSON-Datei geladen und es gibt weitere Filtermöglichkeiten."
 					}
