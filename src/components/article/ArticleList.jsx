@@ -108,7 +108,7 @@ const ArticleList = () => {
 					githubUrl={'https://github.com/w1tch3r-code/js_movie_db'}
 					liveUrl={'https://w1tch3r-code.github.io/js_movie_db/'}
 				/>
-				<ArticleItem
+				{/* <ArticleItem
 					title={'Project Beer API'}
 					description={
 						'Bei diesem REACT-Projekt handelt es sich um eine Bier-Website in einer Mobile-Ansicht, bei der die Bier-Produkte per API gefetcht werden.'
@@ -116,7 +116,7 @@ const ArticleList = () => {
 					skills={'JavaScript • React • SCSS'}
 					githubUrl={'https://github.com/w1tch3r-code/reactjs_beer_api'}
 					liveUrl={'https://reactjs-beer-api-rainer-busch.netlify.app'}
-				/>
+				/> */}
 				<ArticleItem
 					title={'Project Movie DB II'}
 					description={
