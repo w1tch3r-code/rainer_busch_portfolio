@@ -116,7 +116,7 @@ const Resume = () => {
 							<div>
 								<h4>Selbstständiger Mediengestalter</h4>
 								<h5>
-									Mediendesign Busch / Hochneukirch / Dezember 2006 bis Mai 2009
+									Mediendesign Busch / Hochneukirch / Dezember 2006 bis Februar 2010
 								</h5>
 								<p>
 									Als selbstständiger Mediengestalter habe ich Erfahrung in der
@@ -131,7 +131,7 @@ const Resume = () => {
 							<div>
 								<h4>Layouter / DTP-Operator</h4>
 								<h5>
-									WK Werbeagentur / Mönchengladbach / Februar 2005 bis Januar
+									WK Werbeagentur / Mönchengladbach / Juli 2004 bis August
 									2006
 								</h5>
 								<p>
