@@ -77,7 +77,7 @@ const ArticleList = () => {
 					}
 					liveUrl={'https://w1tch3r-code.github.io/project_california_calling/'}
 				/>
-				<ArticleItem
+				{/* <ArticleItem
 					title={'Project Score Keeper'}
 					description={
 						"Bei diesem JavaScript-Projekt handelt es sich um einen 'Score-Keeper', der es ermöglicht, den aktuellen Spielstand eines Basketballspiels anzuzeigen und vorab in einem Overlay die Teamnamen einzugeben."
@@ -89,7 +89,7 @@ const ArticleList = () => {
 					liveUrl={
 						'https://w1tch3r-code.github.io/arrow_functions/js_project_score_keeper/'
 					}
-				/>
+				/> */}
 				<ArticleItem
 					title={'Project Multiple Calculator'}
 					description={
@@ -108,15 +108,15 @@ const ArticleList = () => {
 					githubUrl={'https://github.com/w1tch3r-code/js_movie_db'}
 					liveUrl={'https://w1tch3r-code.github.io/js_movie_db/'}
 				/>
-				{/* <ArticleItem
+				<ArticleItem
 					title={'Project Beer API'}
 					description={
 						'Bei diesem REACT-Projekt handelt es sich um eine Bier-Website in einer Mobile-Ansicht, bei der die Bier-Produkte per API gefetcht werden.'
 					}
-					skills={'JavaScript • React • SCSS'}
+					skills={'JavaScript • React • CSS'}
 					githubUrl={'https://github.com/w1tch3r-code/reactjs_beer_api'}
 					liveUrl={'https://reactjs-beer-api-rainer-busch.netlify.app'}
-				/> */}
+				/>
 				<ArticleItem
 					title={'Project Movie DB II'}
 					description={
